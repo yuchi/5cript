@@ -17,18 +17,22 @@
         padding-left: 6em;
       }
 
+      table td,
+      table th {
+        vertical-align: top;
+        padding: 0.5em 0;
+      }
+
       table th {
         margin: 0;
-        padding: 0;
         text-align: left;
-        min-width: 5em;
+        min-width: 7em;
         font-weight: normal;
         color: #444;
       }
 
       table td {
         margin: 0;
-        padding: 0;
         padding-left: 1em;
         color: #111;
       }
@@ -36,16 +40,18 @@
   </head>
   <body>
 <h1>Titolo</h1>
-<table>
-<tr><th class="actors">- Simone (Si)</th><td>Il regista dell'associazione - Pier (Pi): Il vicepresidente, nonché imbecille programmatore</td></tr>
-</table>
+<dl>
+<dt>Simone </dd><dd>Il regista dell'associazione</dd>
+<dt>Pier </dd><dd>Il vicepresidente, nonché imbecille programmatore</dd>
+</dl>
 <blockquote>Nota di regia</blockquote>
 <h2>Atto 3</h2>
 <table>
 <tr><th class="actors">Pier</th><td>Ciao mondo!</td></tr>
 <tr><th class="actors">Simone</th><td>Cosa credi: di fare con questo inutile programma? <em>[fa notare un bug]</em></td></tr>
 <tr><th class="actors">Ilaria</th><td>Cazzo merda</td></tr>
-<tr><th class="actors">Pier / Ilaria / Simone</th><td>cooooosa?</td></tr>
+<tr><th class="actors">Pier, Ilaria, Simone</th><td>cooooosa?</td></tr>
+<tr><th class="actors">Pier</th><td>Ebbene sì, sono riuscito a finire <code>5cript</code>!</td></tr>
 </table>
   </body>
 </html>
