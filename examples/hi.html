@@ -55,23 +55,22 @@
       }
 
       p.line {
-        padding-left: 110px;
+        padding-left: 100px;
       }
 
       strong.roles {
-        margin-left: -110px;
+        margin-left: -100px;
         display: inline-block;
         min-width: 100px;
-        padding-right: 10px;
       }
 
       strong.roles:after {
-        content: ':'
+        content: ':';
+        padding-right: 1ex;
       }
 
       .multi {
         display: inline-block;
-        padding: 0 1ex;
         border-width: 0px 2px;
         border-style: solid;
         border-color: white red;
@@ -80,12 +79,13 @@
       }
 
       .multi > span {
-        margin: 0 0 0.5em;
+        padding: 0.1em 1ex;
+        border-bottom: 1px solid red;
         display: block;
       }
 
       .multi > span:last-child {
-        margin-bottom: 0;
+        border-bottom: 0 none;
       }
 
     </style>
@@ -98,15 +98,13 @@
 </dl>
 <blockquote>Nota di regia</blockquote>
 <h2>Atto 3</h2>
-<table>
-<tr><th class="actors">Pier</th><td>Ciao mondo!</td></tr>
-<tr><th class="actors">Simone</th><td>Cosa credi: di fare con questo inutile programma? <em>[fa notare un bug]</em></td></tr>
-<tr><th class="actors">Ilaria</th><td>Cazzo merda</td></tr>
-<tr><th class="actors">Pier, Ilaria, Simone</th><td>cooooosa?</td></tr>
-<tr><th class="actors">Pier</th><td>Ebbene sì, sono riuscito a finire <code>5cript</code>!</td></tr>
-<tr><th class="actors">Ilaria, Pier</th><td>Certo, è <span class="multi multi-2"><span>lui lo stronzo!</span><span>lei la stronza!</span></span></td></tr>
-<tr><th class="actors">Simone</th><td><span class="multi multi-3"><span>Lorem ipsum</span><span>dolor sit</span><span>amet</span></span> <span class="multi multi-2"><span>set</span><span>adipiscitur</span></span></td></tr>
-</table>
+<p class="line"><strong class="roles">Pier</strong>Ciao mondo!</p>
+<p class="line"><strong class="roles">Simone</strong>Cosa credi: di fare con questo inutile programma? <em>[fa notare un bug]</em></p>
+<p class="line"><strong class="roles">Ilaria</strong>Cazzo merda</p>
+<p class="line"><strong class="roles">Pier / Ilaria / Simone</strong>cooooosa?</p>
+<p class="line"><strong class="roles">Pier</strong>Ebbene sì, sono riuscito a finire <code>5cript</code>!</p>
+<p class="line"><strong class="roles">Ilaria / Pier</strong>Certo, è <span class="multi multi-2"><span>lui lo stronzo!</span><span>lei la stronza!</span></span></p>
+<p class="line"><strong class="roles">Simone</strong><span class="multi multi-3"><span>Lorem ipsum</span><span>dolor sit</span><span>amet</span></span> <span class="multi multi-2"><span>set</span><span>adipiscitur</span></span></p>
   </body>
 </html>
 
