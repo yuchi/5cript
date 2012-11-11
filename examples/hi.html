@@ -1,8 +1,24 @@
+{ char: null, text: 'Titolo' }
+{ char: null, text: 'Il regista dell\'associazione' }
+{ char: null,
+  text: 'Il vicepresidente, nonché imbecille programmatore' }
+{ char: null, text: 'Nota di regia' }
+{ char: null, text: 'Atto 3' }
+{ char: null, text: 'Ciao mondo!' }
+{ char: '[',
+  text: 'Cosa credi: di fare con questo inutile programma? ' }
+{ char: null, text: 'Cazzo merda' }
+{ char: null, text: 'cooooosa?' }
+{ char: null,
+  text: 'Ebbene sì, sono riuscito a finire <code>5cript</code>!' }
+{ char: '{', text: 'Certo, è ' }
+{ char: '{', text: '' }
+{ char: '{', text: ' ' }
 <!DOCTYPE HTML>
 <html>
   <head>
     <meta charset="utf8">
-    <title>Titolo</title>
+    <title>[object Object]</title>
     <style>
       body {
         font-family: Open Sans, Helvetica, Arial, sans-serif;
@@ -19,11 +35,11 @@
 
       table td,
       table th {
-        vertical-align: top;
         padding: 0.5em 0;
       }
 
       table th {
+        vertical-align: top;
         margin: 0;
         text-align: left;
         min-width: 7em;
@@ -32,10 +48,46 @@
       }
 
       table td {
+        vertical-align: middle;
         margin: 0;
         padding-left: 1em;
         color: #111;
       }
+
+      p.line {
+        padding-left: 110px;
+      }
+
+      strong.roles {
+        margin-left: -110px;
+        display: inline-block;
+        min-width: 100px;
+        padding-right: 10px;
+      }
+
+      strong.roles:after {
+        content: ':'
+      }
+
+      .multi {
+        display: inline-block;
+        padding: 0 1ex;
+        border-width: 0px 2px;
+        border-style: solid;
+        border-color: white red;
+        vertical-align: middle;
+        border-radius: 5px;
+      }
+
+      .multi > span {
+        margin: 0 0 0.5em;
+        display: block;
+      }
+
+      .multi > span:last-child {
+        margin-bottom: 0;
+      }
+
     </style>
   </head>
   <body>
@@ -52,6 +104,8 @@
 <tr><th class="actors">Ilaria</th><td>Cazzo merda</td></tr>
 <tr><th class="actors">Pier, Ilaria, Simone</th><td>cooooosa?</td></tr>
 <tr><th class="actors">Pier</th><td>Ebbene sì, sono riuscito a finire <code>5cript</code>!</td></tr>
+<tr><th class="actors">Ilaria, Pier</th><td>Certo, è <span class="multi multi-2"><span>lui lo stronzo!</span><span>lei la stronza!</span></span></td></tr>
+<tr><th class="actors">Simone</th><td><span class="multi multi-3"><span>Lorem ipsum</span><span>dolor sit</span><span>amet</span></span> <span class="multi multi-2"><span>set</span><span>adipiscitur</span></span></td></tr>
 </table>
   </body>
 </html>

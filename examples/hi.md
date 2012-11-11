@@ -23,4 +23,6 @@ Pier: Ebbene sì, sono riuscito a finire <code>5cript</code>!
 
 Ilaria, Pier: Certo, è { lui lo stronzo! | lei la stronza! }
 
+Simone: { Lorem ipsum | dolor sit | amet } { set | adipiscitur }
+
 

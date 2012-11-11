@@ -19,11 +19,11 @@
 
       table td,
       table th {
-        vertical-align: top;
         padding: 0.5em 0;
       }
 
       table th {
+        vertical-align: top;
         margin: 0;
         text-align: left;
         min-width: 7em;
@@ -32,10 +32,46 @@
       }
 
       table td {
+        vertical-align: middle;
         margin: 0;
         padding-left: 1em;
         color: #111;
       }
+
+      p.line {
+        padding-left: 110px;
+      }
+
+      strong.roles {
+        margin-left: -110px;
+        display: inline-block;
+        min-width: 100px;
+        padding-right: 10px;
+      }
+
+      strong.roles:after {
+        content: ':'
+      }
+
+      .multi {
+        display: inline-block;
+        padding: 0 1ex;
+        border-width: 0px 2px;
+        border-style: solid;
+        border-color: white red;
+        vertical-align: middle;
+        border-radius: 5px;
+      }
+
+      .multi > span {
+        margin: 0 0 0.5em;
+        display: block;
+      }
+
+      .multi > span:last-child {
+        margin-bottom: 0;
+      }
+
     </style>
   </head>
   <body>
