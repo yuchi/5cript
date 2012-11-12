@@ -1,0 +1,25 @@
+{
+  "name": "5cript",
+  "version": "0.1.0",
+  "description": "Markdown-like syntax for theater scripts.",
+  "author": "Pier Paolo Ramon <ramonpierre@gmail.com>",
+  "main": "index.js",
+  "bin": {
+    "5cript": "./bin/5cript"
+  },
+  "directories": {
+    "example": "examples"
+  },
+  "dependencies": {
+    "commander": "~0.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yuchi/5cript.git"
+  }
+}
