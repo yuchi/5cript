@@ -1,9 +1,28 @@
 
 body {
   font-family: Open Sans, Helvetica, Arial, sans-serif;
-  background: #eee;
+  background: #fff;
   padding: 3em 2em;
   max-width: 600px;
+  color: #111;
+  margin: 0 auto;
+}
+
+p {
+  margin: 1em 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 2em 0 1em;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+h2 {
+  font-size: 3em;
 }
 
 blockquote {
@@ -37,10 +56,29 @@ p.line {
   padding-left: 100px;
 }
 
+dl.roles {
+  border: 1px solid #999;
+  border-radius: 5px;
+  padding: 0 1em;
+}
+
+dl.roles dt {
+  margin: 1em 0 0;
+  font-weight: bold;
+  color: #111;
+}
+
+dl.roles dd {
+  margin: 0 0 1em;
+  padding: 0;
+}
+
 strong.roles {
   margin-left: -100px;
   display: inline-block;
   min-width: 100px;
+  color: #444;
+  font-weight: normal;
 }
 
 strong.roles:after {
@@ -48,18 +86,24 @@ strong.roles:after {
   padding-right: 1ex;
 }
 
+.direction {
+  font-style: italic;
+  color: #444;
+}
+
 .multi {
   display: inline-block;
   border-width: 0px 2px;
   border-style: solid;
-  border-color: white red;
+  border-color: white #444;
   vertical-align: middle;
   border-radius: 5px;
 }
 
 .multi > span {
-  padding: 0.1em 1ex;
-  border-bottom: 1px solid red;
+  background: white;
+  padding: 0.1em 0.6ex;
+  border-bottom: 1px solid #333;
   display: block;
 }
 
