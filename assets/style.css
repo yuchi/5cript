@@ -2,10 +2,12 @@
 body {
   font-family: Open Sans, Helvetica, Arial, sans-serif;
   background: #fff;
-  padding: 3em 2em;
-  max-width: 600px;
+  padding: 1em;
+  max-width: 70ex;
   color: #111;
   margin: 0 auto;
+  line-height: 1.4em;
+  font-size: 16px;
 }
 
 p {
@@ -15,6 +17,7 @@ p {
 h1, h2, h3, h4, h5, h6 {
   margin: 2em 0 1em;
   font-weight: normal;
+  line-height: 1em;
 }
 
 h1 {
@@ -53,42 +56,53 @@ table td {
 }
 
 p.line {
-  padding-left: 100px;
+  /*padding-left: 10ex;*/
+  padding-left: 5em;
 }
 
-dl.roles {
+.roles-definition {
   border: 1px solid #999;
-  border-radius: 5px;
+  border-radius: 1ex;
   padding: 0 1em;
 }
 
-dl.roles dt {
+.roles-definition dt {
   margin: 1em 0 0;
   font-weight: bold;
   color: #111;
 }
 
-dl.roles dd {
+.roles-definition dd {
   margin: 0 0 1em;
   padding: 0;
 }
 
-strong.roles {
-  margin-left: -100px;
+.line-roles {
   display: inline-block;
-  min-width: 100px;
-  color: #444;
+  min-width: 5em;
+  margin-left: -5em;
+  color: #777;
   font-weight: normal;
 }
 
-strong.roles:after {
+.line-roles:after {
   content: ':';
   padding-right: 1ex;
 }
 
 .direction {
   font-style: italic;
-  color: #444;
+  color: #777;
+}
+
+@media print {
+  .direction {
+    color: #555;
+  }
+
+  .line-roles {
+    color: #555;
+  }
 }
 
 .multi {
@@ -97,7 +111,6 @@ strong.roles:after {
   border-style: solid;
   border-color: white #444;
   vertical-align: middle;
-  border-radius: 5px;
 }
 
 .multi > span {
