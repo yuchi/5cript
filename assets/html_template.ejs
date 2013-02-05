@@ -3,9 +3,40 @@
   <head>
     <meta charset="utf8">
     <title>{{title}}</title>
+    <!--
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    -->
     <link rel="stylesheet" href="../assets/style.css">
     <style>{{style}}</style>
+    <script>
+    ;(function () {
+      var intervalId;
+      var increment = 0;
+      window.addEventListener('keypress', function (event) {
+        var amount = event.which - 48;
+        if (amount >= 0 && amount <= 9) {
+          increment = Math.pow(2, amount) - 1;
+          if (increment === 0) stop();
+          else start();
+        }
+      });
+
+      function start() {
+        if (intervalId == null) {
+          intervalId = setInterval(function () {
+            window.scrollBy(0, increment);
+          }, 100);
+        }
+      }
+
+      function stop() {
+        if (intervalId != null) {
+          clearInterval(intervalId);
+          intervalId = null;
+        }
+      }
+    })();
+    </script>
   </head>
   <body>
     {{content}}
